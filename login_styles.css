@@ -1,0 +1,120 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Logo in the upper left corner */
+header .logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+header .logo img {
+    width: 80px; /* Logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+header .logo h2 {
+    font-size: 1.4rem; /* Company name below the logo */
+    color: #333;
+    text-align: center;
+}
+
+/* Centering the login box */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+/* Styling the login box */
+.login-box {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #2b5797;
+}
+
+.login-box label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-box button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2b5797;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.login-box button:hover {
+    background-color: #234c85;
+}
+
+/* Styling the forgot password link */
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: #2b5797;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Styling the New User link */
+.new-user {
+    display: block;
+    margin-top: 500px;
+    color: #2b5797;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.new-user:hover {
+    text-decoration: underline;
+}

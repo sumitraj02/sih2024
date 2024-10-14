@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emission Estimation</title>
+    <link rel="stylesheet" href="estimationcss.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png" alt="Logo">
+            <h1>Emission Estimator</h1>
+        </div>
+    </header>
+<div>
+    <section id="input-section">
+        <h2>Enter Mining Activity Data</h2>
+        <form id="emission-form">
+            <label for="excavation">Excavation (in tons):</label>
+            <input type="number" id="excavation" name="excavation" required>
+            <label for="transportation">Transportation (in km):</label>
+            <input type="number" id="transportation" name="transportation" required>
+            <label for="equipment">Equipment usage (in hours):</label>
+            <input type="number" id="equipment" name="equipment" required>
+            <label for="mine-size">Mine Size (Number of workers):</label>
+            <input type="number" id="mine-size" name="mine-size" required>
+            <button type="submit">Estimate Emissions</button>
+        </form>
+    </section>
+
+    <section id="results-section" class="hidden">
+        <h2>Results</h2>
+        <p id="total-emissions">Total Emissions: <span>0</span> tons CO2</p>
+        <p id="per-capita-emissions">Per Capita Emissions: <span>0</span> tons CO2</p>
+    </section>
+
+    <section id="carbon-neutrality">
+        <h2>Carbon Neutrality Pathways</h2> <br>
+        <p>1.Energy Efficiency Improvements
+            Upgrade Equipment: Invest in energy-efficient machinery and equipment to reduce overall energy consumption
+            in manufacturing, transportation,
+            and other operations.
+            Building Efficiency: Improve insulation, lighting, and HVAC systems
+            in buildings to minimize energy waste</p><br>
+        <p>2.Transition to Renewable Energy
+            Solar and Wind Power: Shift to solar panels, wind turbines, and other renewable energy sources to power
+            operations, reducing dependence on fossil fuels.
+            Geothermal and Hydropower: Explore geothermal and hydropower
+            in regions where these options are available.</p><br>
+        <p>3.Carbon Capture and Storage (CCS)
+            Capture Emissions: Install carbon capture technology in industrial facilities to capture CO2 emissions
+            before they reach the atmosphere.
+            Storage or Utilization: Store captured CO2 underground or repurpose it for industrial use,
+            such as in construction materials or enhanced oil recovery.</p><br>
+        <p>4.Electrification of Transportation
+            Electric Vehicles (EVs): Transition company fleets and public transportation systems to electric vehicles.
+            Charging Infrastructure: Invest in charging infrastructure to support
+            the wider adoption of electric vehicles.</p> <br>
+        <p>5.Sustainable Supply Chains
+            Green Logistics: Adopt more sustainable transportation options and optimize supply chains to minimize carbon
+            emissions.
+            Eco-Friendly Materials: Source materials from suppliers that
+            adhere to sustainable and low-carbon practices.</p><br>
+        <p>6.Offsetting Emissions through Afforestation
+            Tree Planting Initiatives: Implement large-scale afforestation and reforestation projects to absorb CO2 from
+            the atmosphere.
+            Forest Conservation: Protect existing forests to ensure
+            continued absorption of carbon emissions.</p><br>
+        <p>7.Switch to Alternative Fuels
+            Biofuels: Use biofuels derived from organic matter as a replacement for traditional fossil fuels.
+            Hydrogen Fuel: Transition to green hydrogen, produced using renewable
+            energy, for industrial processes and heavy transport.</p><br>
+        <p>8.Circular Economy Initiatives
+            Reduce, Reuse, Recycle: Implement circular economy principles, focusing on reducing waste, reusing
+            materials, and recycling products to minimize environmental impact.
+            Waste to Energy: Convert waste into energy through
+            anaerobic digestion or incineration with energy recovery.</p><br>
+        <p>9.Carbon Pricing and Emission Trading
+            Carbon Taxes: Implement a carbon tax to incentivize reductions in carbon emissions across all sectors.
+            Emission Trading Systems (ETS): Participate in carbon
+            trading markets where companies can trade emission allowances,
+            promoting more efficient emissions reductions.</p><br>
+        <p>10.Behavioral and Operational Changes
+            Telecommuting and Remote Work: Encourage remote work to reduce emissions from commuting and office energy
+            use.
+            Green Certifications: Obtain green building certifications (like LEED) and
+            promote sustainable practices across the organization.</p>
+    </section>
+</div>
+    <script src="script.js"></script>
+</body>
+
+</html>
