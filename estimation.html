@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emission Estimation</title>
+    <link rel="stylesheet" href="css/estimationcss.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="Logo">
+            <h1>Emission Estimator</h1>
+        </div>
+    </header>
+    <div>
+        <section id="input-section">
+            <div class="input-text-container">
+                <div class="form-container">
+                    <h2>Enter Mining Activity Data</h2>
+                    <form id="emission-form">
+                        <label for="excavation">Excavation (in tons):</label>
+                        <input type="number" id="excavation" name="excavation" required>
+                        <label for="transportation">Transportation (in km):</label>
+                        <input type="number" id="transportation" name="transportation" required>
+                        <label for="equipment">Equipment usage (in hours):</label>
+                        <input type="number" id="equipment" name="equipment" required>
+                        <label for="mine-size">Mine Size (Number of workers):</label>
+                        <input type="number" id="mine-size" name="mine-size" required>
+                        <button type="submit">Estimate Emissions</button>
+                    </form>
+                    <section id="results-section" class="hidden">
+                        <h2>Results</h2>
+                        <p id="total-emissions">Total Emissions: <span>0</span> tons CO2</p>
+                        <p id="per-capita-emissions">Per Capita Emissions: <span>0</span> tons CO2</p>
+                    </section>
+                </div>
+                <div class="text-container">
+                    <h2>Carbon Neutrality Pathways</h2>
+        <p>1.Energy Efficiency Improvements
+            Upgrade Equipment: Invest in energy-efficient machinery and equipment to reduce overall energy consumption
+            in manufacturing, transportation,
+            and other operations.
+            Building Efficiency: Improve insulation, lighting, and HVAC systems
+            in buildings to minimize energy waste</p>
+        <p>2.Transition to Renewable Energy
+            Solar and Wind Power: Shift to solar panels, wind turbines, and other renewable energy sources to power
+            operations, reducing dependence on fossil fuels.
+            Geothermal and Hydropower: Explore geothermal and hydropower
+            in regions where these options are available.</p>
+        <p>3.Carbon Capture and Storage (CCS)
+            Capture Emissions: Install carbon capture technology in industrial facilities to capture CO2 emissions
+            before they reach the atmosphere.
+            Storage or Utilization: Store captured CO2 underground or repurpose it for industrial use,
+            such as in construction materials or enhanced oil recovery.</p>
+        <p>4.Electrification of Transportation
+            Electric Vehicles (EVs): Transition company fleets and public transportation systems to electric vehicles.
+            Charging Infrastructure: Invest in charging infrastructure to support
+            the wider adoption of electric vehicles.</p>
+     <p>5.Sustainable Supply Chains
+            Green Logistics: Adopt more sustainable transportation options and optimize supply chains to minimize carbon
+            emissions.
+            Eco-Friendly Materials: Source materials from suppliers that
+            adhere to sustainable and low-carbon practices.</p><br>
+        
+
+                </div>
+            </div>
+        </section>
+<!--
+         <section id="carbon-neutrality">
+            <h2>Carbon Neutrality Pathways</h2> <br>
+            Same content from previous section 
+            <p>1. Energy Efficiency Improvements ...</p>
+             Other items removed for brevity
+        </section>-->
+
+       
+    </div>
+    <footer>
+        <p>Made with 💕 CodeXplorers © 2024 Prakriti Nidesh . All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
