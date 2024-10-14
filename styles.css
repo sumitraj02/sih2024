@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-image: url(image/im2.png);
+    
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    background-color: #abf2b1;
+
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 100px;
+}
+
+.site-name {
+    margin: 5px 0 0;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.navbar li a:hover {
+    color: #007BFF;
+}
+
+/* Hero Section */
+#hero {
+    position: relative;
+}
+img{
+    border-image-outset: 0cm;
+    
+}
+.hero-text {
+    color: white;
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.animated-text {
+    animation: fadeInUp 2s ease-in-out;
+}
+/* Keyframe animation for text */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 5px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.carousel {
+    margin-top: 20px;
+    border-image-outset: 0ch;
+}
+
+main {
+    padding: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}

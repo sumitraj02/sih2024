@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    background-color: #2b5797;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+h1 {
+    font-size: 2rem;
+    animation: slideIn 1s ease-out;
+}
+
+section {
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #2b5797;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #234c85;
+}
+
+#land-required, #alternatives p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+#land-required span, #alternatives span {
+    color: #2b5797;
+    font-weight: bold;
+}
+
+#alternatives {
+    animation: fadeIn 1s ease-in;
+    margin-top: 20px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+footer {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
